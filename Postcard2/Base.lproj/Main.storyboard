@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AjI-XN-dT0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D130a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AjI-XN-dT0">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
@@ -13,6 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="kUl-Ah-cYT"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="aKT-74-WS0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SagradaFamilia.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="06Q-bK-Es2">
@@ -103,6 +104,15 @@
                                     <rect key="frame" x="43" y="81" width="334" height="55"/>
                                 </variation>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5BM-TS-Uai">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="43" y="151" width="180" height="41"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -112,6 +122,7 @@
                                 <exclude reference="DsQ-Cg-HR9"/>
                                 <exclude reference="6Kb-ht-qZi"/>
                                 <exclude reference="0fR-m8-DzX"/>
+                                <exclude reference="5BM-TS-Uai"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -123,17 +134,23 @@
                                 <include reference="0fR-m8-DzX"/>
                             </mask>
                         </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="5BM-TS-Uai"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="enterMessageTextField" destination="DsQ-Cg-HR9" id="8jl-nS-Jmq"/>
                         <outlet property="enterNameTextField" destination="aAJ-ff-nAA" id="0a2-0e-CIB"/>
                         <outlet property="mailButton" destination="6Kb-ht-qZi" id="dbh-p3-gWv"/>
                         <outlet property="messageLabel" destination="0fR-m8-DzX" id="6f2-Yq-BDv"/>
+                        <outlet property="nameLabel" destination="5BM-TS-Uai" id="ldW-Yd-gcA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1375.5" y="389"/>
+            <point key="canvasLocation" x="1375.5" y="388.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aAY-eb-sxz">
